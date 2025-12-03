@@ -2,8 +2,20 @@
 
 extern "C" { 
     int add(int a, int b);
-} 
+}
 
-int main() {
-    std::cout << add(2, 3) << std::endl;
+int main(int argc, char** argv) {
+    if (argc != 3) {
+        return 1;
+    }
+
+    try {
+        int arg1 = std::stoi(argv[1]);
+        int arg2 = std::stoi(argv[2]);
+
+        std::cout << "Calling Assembly code => " << arg1 << " + " << arg2 << " = " << add(arg1, arg2) << std::endl; 
+    } catch (const std::exception&) {
+        std::cout << "Parse error ocurred" << std::endl;
+        return 2;
+    }    
 }
