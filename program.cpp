@@ -1,5 +1,5 @@
 #include <iostream>
 
 int main() {
-    std::cout << "Demo COUT" << std::endl;
+    std::printf("Test\n");
 }
