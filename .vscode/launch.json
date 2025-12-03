@@ -5,7 +5,7 @@
             "name": "Launch program (gdb)",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/program",
+            "program": "${workspaceFolder}/out/program",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
