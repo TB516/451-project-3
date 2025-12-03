@@ -6,7 +6,7 @@
             "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/out/program",
-            "args": [],
+            "args": ["${input:arg1}", "${input:arg2}"],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
             "environment": [],
@@ -21,6 +21,18 @@
                     "ignoreFailures": true
                 }
             ]
+        }
+    ],
+    "inputs": [
+        {
+            "id": "arg1",
+            "type": "promptString",
+            "description": "Enter first argument"
+        },
+        {
+            "id": "arg2",
+            "type": "promptString",
+            "description": "Enter second argument"
         }
     ]
 }
