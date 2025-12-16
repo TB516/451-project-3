@@ -6,7 +6,7 @@
             "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/out/program",
-            "args": ["${input:arg1}", "${input:arg2}"],
+            "args": ["${input:arg1}", "${input:arg2}", "${input:arg3}"],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
             "environment": [],
@@ -27,12 +27,17 @@
         {
             "id": "arg1",
             "type": "promptString",
-            "description": "Enter first argument"
+            "description": "First to be multiplied/added"
         },
         {
             "id": "arg2",
             "type": "promptString",
-            "description": "Enter second argument"
+            "description": "Second num to be multiplied/added"
+        },
+        {
+            "id": "arg3",
+            "type": "promptString",
+            "description": "Factor to scale array by"
         }
     ]
 }
