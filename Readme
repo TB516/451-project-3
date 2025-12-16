@@ -1,0 +1,1 @@
+Im on a linux PC so I dont have Visual Studio, but I do have VSCdoe, so I made this a devcontainer, then used the GNU assembly. To run yourself if you arent on a Linux device, using VSCode devcontainers should let it all work.
